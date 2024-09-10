@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+   body {
+            height: 100vh;
+        width: 100vw;
+        background-image: url("651bb723f79da22f0d77be26_Thumbnail (81).png" );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    
+      }
+
+      nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    
+ 
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    gap: 2.5rem;
+    font-size: 2.5rem;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color:rgb(93, 49, 236);
+}
+.logo img{
+    width: 350px;
+    height: 150px;
+    float: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.aboutphoto img{
+    height: 23rem;
+    width: 33rem;
+    border-radius: 5%;
+}
+
+.about-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.text {
+    max-width: 700px;
+}
+
+.text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    color: rgb(200, 255, 0);
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+.hover-text:hover {
+color: red; 
+ }
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #000;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="Screenshot__126_-removebg-preview.png" alt="logo">
+    </div>
+    
+    <nav>
+        <div class="logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="Reason.html">Reason</a></li>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="aboutphoto">
+            <img src="IMG-20240830-WA0029.jpg" alt="">
+        </div>
+        <div class="about-section">
+            <div class="image">
+                <img src="person.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="hover-text">ABOUT ME</h1>
+                <p>Hello, my name is Dhruv Dumaniya, and I'm a computer enginner major. I have experience with several programming languages including Java, Python,and SQL. I'm particulerly interested in artificial intelligence and machine learning, and I'm currently working on a project that involves developingan Al-powered chatbot.Last semester I worked on a team project that involved developing a mobile app for-tracking fitness goals. I learned a lot about softwaredevelo ment processes and project management duringtha experience. After graduation, I hope to work as a software engineer at a tech company, where I can continue to developmy skills and contribute to innovative projects. In my free time, I enjoy attendin backathons and learning about new technologies in the field. I also learnt violin for few days but due to some reasons I dropped it. If I have a chance I will continue this in the future. I have presented technical papers during my B.Tech. 2nd and 3rd year. During the technical fest held in our college, I took part in the QUIZ committee and I conducted stalls with my own initiation. Snwt4...</p>
+                
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        
+document.addEventListener("DOMContentLoaded", function() {
+   
+    fetch('dhruv.thml')
+        .then(response => response.text())
+        .then(data => document.getElementById('dhruv').innerHTML = data);
+
+ 
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+});
+
+    </script>
+</body>
+</html>

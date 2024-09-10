@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <style>
+           body {
+            height: 100vh;
+        width: 100vw;
+        background-image: url("651bb723f79da22f0d77be26_Thumbnail (81).png" );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    
+      }
+ 
+
+      nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    position: relative;left: 210px;
+    }
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    gap: 2.5rem;
+    font-size: 2.5rem;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color:rgb(93, 49, 236);
+}
+.logo img{
+    width: 350px;
+    height: 150px;
+    float: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    
+}
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 10px;
+    left: 20px;
+    padding-right: 27%;
+    
+}
+
+.contact-info h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color:  rgb(200, 255, 0);
+    margin: 10px 0;
+
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 20px;
+}
+    
+.contact-info p a{
+    color: #d9e1e3;
+}
+.midiya a {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+padding-left: 4%;
+border: 2px solid #0ef;
+border-radius: 30%;
+font-size: 35px;
+color: rgb(240, 241, 241);
+text-decoration: none;
+margin: 20px 15px 20px 0;
+}
+
+.midiya a:hover{
+background:#0ef;
+color: #081629;
+box-shadow:0 0 20px #0ef;
+}
+.contact-info i{
+    margin-right: 1rem;
+}
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    width: 230px;
+    height: 200px;
+
+    
+}
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+ 
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9e1e3;
+    color: #0a0a0a;
+    position: relative;right: 100px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #030303;
+}
+
+.submit-btn {
+    background-color: #ff1744;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;right: 100px;
+
+}
+
+.submit-btn:hover {
+    background-color: #e60039;
+}
+.hover-text:hover {
+color: red; 
+ }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="Screenshot__126_-removebg-preview.png" alt="logo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="Reason.html">Reason</a></li>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1 class="hover-text">Contact Me</h1>
+            <p><i class="fas fa-envelope"></i>dp6525069@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 9313018***</p>
+            <p><i class="fa-solid fa-location-dot"></i>Bhadreshi Surendranagar,Gujarat 363040</p>
+            <div class="midiya">
+            <a href="https://www.instagram.com/dhulo._.7314?igsh=MWV4eHE3dzk4N2p0YQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100050769548514&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href=" https://x.com/dhruv_dumaniya?t=hilyRDOtRKWBOrbtJgFlsg&s=08  "><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.google.com/maps/@22.2363648,70.8968448,13z?authuser=0&entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="number" id="Number" placeholder="Your Number" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const Number = document.getElementById('Number').value;
+
+    if(name && email && message && Number) {
+        alert('Thank you for your message, ' + name + '!');
+        document.getElementById('contactForm').reset();
+    } else {
+        alert('Please fill out all fields.');
+    }
+});
+
+    </script>
+</body>
+</html>
